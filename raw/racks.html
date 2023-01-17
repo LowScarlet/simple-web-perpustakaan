@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Perpustakaan - Racks</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="asset/main.css">
+</head>
+
+<body>
+    <div class="px-lg-4" style="
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.9)), url('asset/doodle-science.png');
+    ">
+        <nav class="navbar navbar-expand-lg rounded" aria-label="Thirteenth navbar example">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarsExample11" aria-controls="navbarsExample11" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse d-lg-flex" id="navbarsExample11">
+                    <a class="navbar-brand col-lg-3 me-0" href="#">📚 Perpustakaan</a>
+                    <ul class="navbar-nav col-lg-6 justify-content-lg-center">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/bookcollection">Koleksi Buku</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/racks">Daftar Rak</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/users">Para Pengguna</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/about">Tentang</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
+                                aria-expanded="false">Kontrol Admin</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="/admin/bookcollection">Koleksi Buku</a></li>
+                                <li><a class="dropdown-item" href="/admin/racks">Daftar Rak</a></li>
+                                <li><a class="dropdown-item" href="/admin/users">Pengguna</a></li>
+                                <li><a class="dropdown-item" href="/admin/selling">Penjualan</a></li>
+                                <li><a class="dropdown-item" href="/admin/lending">Peminjaman</a></li>
+                                <li><a class="dropdown-item" href="/admin/return">Pengembalian</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="d-lg-flex col-lg-3 justify-content-lg-end">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-outline-success m-1 dropdown-toggle"
+                                data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+                                🖐️ Hello, LowScarlet!
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
+                                <li><button class="dropdown-item" type="button">Logout</button></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <main class="py-4 px-sm-5 bg-light">
+        <div class="card mt-3">
+            <div class="card-body py-3 px-3">
+                <div class="row">
+                    <label for="inputEmail3" class="col-sm-2 col-form-label">🧐 Sedang cari apa?</label>
+                    <div class="col-sm-10">
+                        <div class="input-group">
+                            <select class="form-select" aria-label="Default select example">
+                                <option value="1" selected>Kode</option>
+                                <option value="2">Lokasi</option>
+                            </select>
+                            <input type="text" class="form-control" aria-label="Text input with 2 dropdown buttons">
+                            <button class="btn btn-success">🔎 Temukan!</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card mt-4">
+            <div class="card-body table-responsive">
+                <table class="table table-striped align-middle">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">🔢 Kode</th>
+                            <th scope="col">🗺️ Lokasi</th>
+                            <th scope="col">📖 Buku</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>A0A1</td>
+                            <td>Lantai 1</td>
+                            <td>Cara menjadi Web Developer dalam hitungan jam!</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>A0A2</td>
+                            <td>Lantai 1</td>
+                            <td>Cara cepat belajar Kalkulus</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>A0A3</td>
+                            <td>Lantai 1</td>
+                            <td>Kalkulus Dasar</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>A0A4</td>
+                            <td>Lantai 1</td>
+                            <td>Arsitektur & Organisasi Komputer</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <nav aria-label="Page navigation example">
+                <ul class="pagination justify-content-end px-2">
+                    <li class="page-item disabled">
+                        <a class="page-link">Previous</a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">Next</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </main>
+    <div class="px-5 py-4 default-bg">
+        <div class="text-center">
+            <span>Made with 💕 from <a href="http://lowscarlet.my.id/" target="_blank">Tegar Maulana Fahreza
+                    (LowScarlet)</a></span>
+        </div>
+        <footer class="d-flex flex-wrap justify-content-between align-items-center pt-3">
+            <p class="col-md-4 mb-0 text-muted">&copy; 2022 📚 Aplikasi Manajemen Perpustakaan</p>
+
+            <a href="/"
+                class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+                <svg class="bi me-2" width="40" height="32">
+                    <use xlink:href="#bootstrap" />
+                </svg>
+            </a>
+
+            <ul class="nav col-md-4 justify-content-end">
+                <li class="nav-item nav-link px-2">⚒️ Tools</li>
+                <li class="nav-item"><a href="https://www.php.net/" target="_blank"
+                        class="nav-link px-2 text-muted">Php</a></li>
+                <li class="nav-item"><a href="https://www.mysql.com/" target="_blank"
+                        class="nav-link px-2 text-muted">MySql</a></li>
+                <li class="nav-item"><a href="https://getbootstrap.com/" target="_blank"
+                        class="nav-link px-2 text-muted">Bootstrap</a></li>
+            </ul>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
+</html>
